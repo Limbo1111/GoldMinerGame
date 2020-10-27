@@ -20,11 +20,9 @@ public class MapFabric {
         switch (type) {
             case DB -> {
                 gameMap = new FSGameMap();
-                break;
             }
             case FS -> {
                 gameMap = new DBGameMap();
-                break;
             }
             default ->
                     throw new IllegalArgumentException("Game can`t create a new map< by type " + type);
