@@ -17,7 +17,7 @@ public class MainApp extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) {
         try {
             Parent menu = FXMLLoader.load(getClass().getResource("view/MainMenu.fxml"));
             primaryStage.setTitle("Gold Miner");
@@ -31,7 +31,7 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
-    public void initNewGame() throws IOException {
+    public void initNewGame() {
         try {
             Parent loaderNewGame = FXMLLoader.load(getClass().getResource("view/NewGame.fxml"));
             Stage newGameStage = new Stage();
@@ -43,7 +43,7 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
-    public void initLoadGame() throws IOException {
+    public void initLoadGame() {
         try {
             Parent loaderLoadGame = FXMLLoader.load(getClass().getResource("view/LoadGame.fxml"));
             Stage newLoadGameStage = new Stage();
@@ -55,7 +55,7 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
-    public void initStat() throws IOException {
+    public void initStat() {
         try {
             Parent loaderStatGame = FXMLLoader.load(getClass().getResource("view/StatOfGame.fxml"));
             Stage newStatGameStage = new Stage();
@@ -67,6 +67,7 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
+
 
     public static void main (String[]args){
             launch(args);
