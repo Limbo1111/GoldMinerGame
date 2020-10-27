@@ -44,11 +44,7 @@ public class MainMenuController {
             @Override
             public void handle(WindowEvent windowEvent) {
                 stage.close();
-                try {
-                    accessToMainAppMethods.start(MainApp.accessToMainMenuStage);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                accessToMainAppMethods.start(MainApp.accessToMainMenuStage);
             }
         });
     }
